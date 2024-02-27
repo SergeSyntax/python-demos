@@ -1,0 +1,6 @@
+# fast api basic
+fastapi~=0.109.2
+uvicorn[standard]~=0.27.1
+# seems to be included in fast api might be not relvant
+pydantic~=2.6.2
+# sql database
