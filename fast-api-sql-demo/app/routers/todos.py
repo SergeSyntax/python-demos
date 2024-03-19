@@ -59,7 +59,7 @@ async def create_todo(db: db_dependency, user: user_dependency,
     db.add(todo_model)
     db.commit()
 
-@router.put("/todo/{todo_id}", status_code=status.HTTP_204_NO_CONTENT)
+@router.put("/{todo_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def update_todo(db: db_dependency,
                       user: user_dependency,
                       todo_request: TodoRequest,
